@@ -1,0 +1,198 @@
+/* Tags */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Spartan, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+div {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 85px;
+    margin-bottom: 0rem;
+}
+
+.container {
+    height: 100%;
+    margin-bottom: 0rem;
+}
+
+/* Classes */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.reviews {
+    position: relative;
+    top: -155px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    background: hsl(300, 24%, 96%);
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.stars {
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 45px;
+    position: relative;
+    top: -5px;
+}
+
+.opinions {
+    position: relative;
+    top: -150px;
+    background: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70px;
+}
+
+.name {
+    color: hsl(300, 24%, 96%);
+    font-weight: 500;
+
+}
+
+.buyer {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.text {
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: hsl(300, 24%, 96%);
+    line-height: 24px;
+    text-align: left;
+}
+
+/* IDs */
+#background-shape-top {
+    height: 230px;
+    background: url("bg-pattern-top-mobile.svg") no-repeat;
+}
+
+#title {
+    position: relative;
+    top: -180px;
+    margin: 1rem 1.5rem 0.8rem 1.5rem;
+    color: hsl(300, 43%, 22%);
+    font-size: 2.5rem;
+
+}
+
+#overview {
+    position: relative;
+    top: -168px;
+    color: hsl(300, 43%, 25%);
+    margin: 1rem 1.2rem 2rem 1.2rem;
+    line-height: 23px;
+}
+
+@media (min-width: 1025px) {
+    #background-shape-top {
+        height: 500px;
+        background: url("bg-pattern-top-desktop.svg") no-repeat;
+    }
+
+    #background-shape-bottom {
+        position: relative;
+        right: -300px;
+        bottom: 300px;
+        height: 500px;
+        background: url("bg-pattern-bottom-desktop.svg") no-repeat;
+    }
+
+    #title {
+        position: relative;
+        top: -380px;
+        left: 180px;
+        width: 430px;
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    #overview {
+        width: 450px;
+        text-align: left;
+        position: relative;
+        margin-top: 0.2rem;
+        top: -380px;
+        left: 187px;
+    }
+
+    .reviews {
+        width: 500px;
+        display: flex;
+        position: relative;
+        top: -625px;
+        left: 1000px;
+    }
+
+    .report-rated {
+        transform: translateX(50px);
+    }
+
+    .tech-rated {
+        transform: translateX(100px);
+    }
+
+    .text {
+        width: 320px;
+        text-align: left;
+        margin-left: 1.7rem;
+    }
+
+    .opinions {
+        width: 375px;
+        position: relative;
+        top: -600px;
+        left: 180px;
+    }
+
+    #comments {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #second-comment {
+        transform: translateY(22px);
+    }
+
+    #third-comment {
+        transform: translateY(44px);
+    }
+
+    .header {
+        margin-top: 1.5rem;
+        margin-left: 1.7rem;
+    }
+}
