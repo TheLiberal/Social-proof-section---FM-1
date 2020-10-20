@@ -234,11 +234,12 @@ body {
     }
 
     .rate {
-        margin: 1 auto;
+        margin: auto;
         padding-bottom: 2.5rem;
         display: inline-block;
-        width: 90%;
+        width: 80%;
         height: 7vh;
+
     }
 
     .rate-content {
@@ -261,6 +262,7 @@ body {
         transform: translateX(0px);
         margin: auto;
         margin-top: 2rem;
+
     }
 
     #bottom {
@@ -321,6 +323,5 @@ body {
     #background-desktop-image-bottom {
         display: none;
     }
-
 
 }
