@@ -1,198 +1,315 @@
-/* Tags */
-* {
-    margin: 0;
-    padding: 0;
+body {
     font-family: Spartan, Arial, Helvetica, sans-serif;
     font-size: 15px;
-}
-
-div {
-    text-align: center;
-}
-
-footer {
+    font-weight: 400;
     position: relative;
-    bottom: 85px;
-    margin-bottom: 0rem;
 }
 
 .container {
-    height: 100%;
-    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Classes */
-.attribution {
-    font-size: 11px;
-    text-align: center;
+#background-desktop-image-top {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
-.reviews {
-    position: relative;
-    top: -155px;
-    font-weight: 700;
-    color: hsl(300, 43%, 22%);
-    background: hsl(300, 24%, 96%);
-    margin: 1.5rem;
-    padding: 1.5rem;
-    border-radius: 10px;
+#top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.stars {
-    margin-bottom: 1rem;
+#top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 6rem;
 }
 
-.profile-picture {
-    border-radius: 50%;
-    width: 45px;
-    position: relative;
-    top: -5px;
+.rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 5vh;
 }
 
-.opinions {
-    position: relative;
-    top: -150px;
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 7.8rem;
+    margin-right: 7.8rem;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background: hsl(300, 43%, 22%);
     border-radius: 10px;
-    margin: 1.5rem;
-    padding: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    padding: 1rem;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: left;
+    margin-bottom: 0rem;
 }
 
-.person {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 70px;
+.description {
+    padding-left: 0.5rem;
+}
+
+
+.title {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3rem;
+    width: 40%;
+    margin-left: 5rem;
+    margin-bottom: 1.1rem;
+}
+
+.text {
+    color: hsl(300, 43%, 22%);
+    width: 40%;
+    margin-left: 5rem;
+    margin-top: 0rem;
+}
+
+.rate {
+    background: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.rate-content {
+    margin-left: 1rem;
+    margin-top: 0.45rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.star {
+    margin-top: 0.25rem;
+    padding: 0.15rem;
+    width: 18px;
+    height: 18px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin: 0.95rem;
 }
 
 .name {
     color: hsl(300, 24%, 96%);
     font-weight: 500;
-
+    margin-bottom: 0rem;
 }
 
 .buyer {
     color: hsl(333, 80%, 67%);
     font-weight: 400;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
 }
 
-.text {
-    margin-top: 1.3rem;
-    margin-bottom: 0.8rem;
+.review-content {
     color: hsl(300, 24%, 96%);
-    line-height: 24px;
-    text-align: left;
+    margin: 1rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.3rem;
 }
 
-/* IDs */
-#background-shape-top {
-    height: 230px;
-    background: url("bg-pattern-top-mobile.svg") no-repeat;
+#second-review {
+    transform: translateY(20px);
 }
 
-#title {
-    position: relative;
-    top: -180px;
-    margin: 1rem 1.5rem 0.8rem 1.5rem;
-    color: hsl(300, 43%, 22%);
-    font-size: 2.5rem;
-
+#third-review {
+    transform: translateY(40px);
 }
 
-#overview {
-    position: relative;
-    top: -168px;
-    color: hsl(300, 43%, 25%);
-    margin: 1rem 1.2rem 2rem 1.2rem;
-    line-height: 23px;
+#first-rate {
+    margin-right: 8rem;
 }
 
-@media (min-width: 1025px) {
-    #background-shape-top {
-        height: 500px;
-        background: url("bg-pattern-top-desktop.svg") no-repeat;
+#second-rate {
+    transform: translateX(25px);
+    margin-right: 8rem;
+}
+
+#third-rate {
+    transform: translateX(50px);
+    margin-right: 8rem;
+}
+
+#background-desktop-image-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+#background-mobile-image-top {
+    display: none;
+}
+
+#background-mobile-image-bottom {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
     }
 
-    #background-shape-bottom {
-        position: relative;
-        right: -300px;
-        bottom: 300px;
-        height: 500px;
-        background: url("bg-pattern-bottom-desktop.svg") no-repeat;
-    }
-
-    #title {
-        position: relative;
-        top: -380px;
-        left: 180px;
-        width: 430px;
-        text-align: left;
-        font-size: 3.5rem;
-    }
-
-    #overview {
-        width: 450px;
-        text-align: left;
-        position: relative;
-        margin-top: 0.2rem;
-        top: -380px;
-        left: 187px;
-    }
-
-    .reviews {
-        width: 500px;
+    .container {
+        text-align: center;
         display: flex;
+        flex-direction: column;
+    }
+
+    #top {
+        flex-direction: column;
+        justify-content: center;
         position: relative;
-        top: -625px;
-        left: 1000px;
+        margin-left: 1rem;
+        margin: auto;
     }
 
-    .report-rated {
-        transform: translateX(50px);
+    #top-left {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
+        flex-wrap: wrap;
     }
 
-    .tech-rated {
-        transform: translateX(100px);
+    #top-right {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .title {
+        display: inline-block;
+        margin: auto;
+        padding: 1rem;
+        text-align: center;
+        width: 90%;
     }
 
     .text {
-        width: 320px;
-        text-align: left;
-        margin-left: 1.7rem;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        width: 90%;
     }
 
-    .opinions {
-        width: 375px;
+    .rate {
+        margin: auto;
+        margin: 1rem 1rem 1rem 1rem;
+        padding-bottom: 2.5rem;
+        display: inline-block;
+        width: 80%;
+        height: 7vh;
+    }
+
+    #first-rate {
+        margin-top: 2rem;
+    }
+
+    #second-rate {
+        transform: translateX(0px);
+    }
+
+    #third-rate {
+        transform: translateX(0px);
+    }
+
+    #bottom {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .profile-picture {
+        margin: 0;
+        padding: 0.3rem;
         position: relative;
-        top: -600px;
-        left: 180px;
     }
 
-    #comments {
-        display: flex;
-        flex-direction: row;
+    .review {
+        padding: 1.5rem;
     }
 
-    #second-comment {
-        transform: translateY(22px);
+    #third-review {
+        margin-bottom: 5rem;
     }
 
-    #third-comment {
-        transform: translateY(44px);
+    .description {
+        margin-top: 0.8rem;
     }
 
-    .header {
-        margin-top: 1.5rem;
-        margin-left: 1.7rem;
+    .review-content {
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        text-align: left;
     }
+
+    #background-mobile-image-top {
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+    }
+
+    #background-mobile-image-bottom {
+        display: inline;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        z-index: -2;
+        width: 100%;
+        height: 30vh;
+    }
+
+    #background-desktop-image-top {
+        display: none;
+    }
+
+    #background-desktop-image-bottom {
+        display: none;
+    }
+
+
 }
