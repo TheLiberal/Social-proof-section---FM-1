@@ -3,6 +3,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     position: relative;
+    overflow-x: hidden;
 }
 
 .container {
@@ -105,6 +106,7 @@ body {
 .rate-content {
     margin-left: 1rem;
     margin-top: 0.45rem;
+    margin: 1 auto;
     color: hsl(300, 43%, 22%);
 }
 
@@ -232,24 +234,33 @@ body {
     }
 
     .rate {
-        margin: auto;
-        margin: 1rem 1rem 1rem 1rem;
+        margin: 1 auto;
         padding-bottom: 2.5rem;
         display: inline-block;
-        width: 80%;
+        width: 90%;
         height: 7vh;
     }
 
+    .rate-content {
+        margin: auto;
+        margin-top: 0.7rem;
+    }
+
     #first-rate {
+        margin: auto;
         margin-top: 2rem;
     }
 
     #second-rate {
         transform: translateX(0px);
+        margin: auto;
+        margin-top: 2rem;
     }
 
     #third-rate {
         transform: translateX(0px);
+        margin: auto;
+        margin-top: 2rem;
     }
 
     #bottom {
