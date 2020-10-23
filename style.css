@@ -4,24 +4,16 @@ body {
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: 100%;
-}
-
-#background-desktop-image-top {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    background-image: url("./bg-pattern-top-desktop.svg");
-    background-repeat: no-repeat;
-    width: 584px;
-    height: 362px;
 }
 
 #top {
@@ -58,6 +50,7 @@ body {
     justify-content: center;
     margin-left: 7.8rem;
     margin-right: 7.8rem;
+    margin-bottom: 0rem;
 }
 
 .review {
@@ -150,6 +143,7 @@ body {
     margin-top: 0.3rem;
 }
 
+
 #second-review {
     transform: translateY(20px);
 }
@@ -172,15 +166,25 @@ body {
     margin-right: 8rem;
 }
 
+#background-desktop-image-top {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-image: url("./bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    width: 584px;
+    height: 362px;
+}
+
 #background-desktop-image-bottom {
     position: absolute;
-    bottom: -60px;
+    bottom: 0px;
     right: 0;
     background-image: url("./bg-pattern-bottom-desktop.svg");
-    /* background: linear-gradient(red, green); */
     background-repeat: no-repeat;
     width: 1085px;
     height: 673px;
+    z-index: -2;
 }
 
 #background-mobile-image-top {
@@ -192,9 +196,8 @@ body {
 }
 
 @media (max-width: 1000px) {
-    * {
-        margin: 0;
-        padding: 0;
+    body {
+        overflow-y: visible;
     }
 
     .container {
@@ -312,11 +315,10 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        /* z-index: -2; */
+        z-index: -2;
         width: 373px;
         height: 232px;
-        background-image: url("./bg-pattern-top-mobile.svg") no-repeat;
-        /* background: linear-gradient(pink, blue); */
+        background: url("./bg-pattern-top-mobile.svg") no-repeat;
     }
 
     #background-mobile-image-bottom {
@@ -324,11 +326,10 @@ body {
         position: absolute;
         bottom: 0;
         right: 0;
-        z-index: -2;
+        /* z-index: -2; */
         width: 375px;
         height: 503px;
-        background-image: url("bg-pattern-bottom-mobile.svg") no-repeat;
-        background: linear-gradient(pink, blue);
+        background: url("bg-pattern-bottom-mobile.svg") no-repeat;
     }
 
     #background-desktop-image-top {
