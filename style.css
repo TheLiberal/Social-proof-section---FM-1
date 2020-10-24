@@ -198,6 +198,7 @@ body {
 @media (max-width: 1000px) {
     body {
         overflow-y: visible;
+        height: auto;
     }
 
     .container {
@@ -313,7 +314,7 @@ body {
     #background-mobile-image-top {
         display: block;
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         z-index: -2;
         width: 373px;
@@ -324,9 +325,9 @@ body {
     #background-mobile-image-bottom {
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         right: 0;
-        /* z-index: -2; */
+        z-index: -2;
         width: 375px;
         height: 503px;
         background: url("bg-pattern-bottom-mobile.svg") no-repeat;
