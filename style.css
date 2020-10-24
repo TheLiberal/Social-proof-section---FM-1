@@ -317,7 +317,7 @@ body {
         top: -10px;
         left: 0;
         z-index: -2;
-        width: 373px;
+        width: 105%;
         height: 232px;
         background: url("./bg-pattern-top-mobile.svg") no-repeat;
     }
@@ -328,7 +328,7 @@ body {
         bottom: -10px;
         right: 0;
         z-index: -2;
-        width: 375px;
+        width: 115%;
         height: 503px;
         background: url("bg-pattern-bottom-mobile.svg") no-repeat;
     }
