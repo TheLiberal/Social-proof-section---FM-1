@@ -2,7 +2,7 @@
 
 This is my implementation of Social Proof Section from [frontendmentor.io](https://frontendmentor.io)
 
-<img src="social-proof-section.jpg" width=100%>
+<img src="social-proof-section-preview.jpg" width=100%>
 
 ### Key elements
 - **Design from [frontendmentor](https://frontendmentor.io)**
