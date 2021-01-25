@@ -5,6 +5,6 @@ This is my implementation of Social Proof Section from [frontendmentor.io](https
 <img src="social-proof-section.jpg" width=100%>
 
 ### Key elements
-- **Design from [frontendmentor](https://frontendmentor.io)
+- **Design from [frontendmentor](https://frontendmentor.io)**
 - **SASS/SCSS**
 - **Responsive**
